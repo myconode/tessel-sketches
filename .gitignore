@@ -1,0 +1,11 @@
+
+.*
+
+# allowed dot files
+!.gitignore
+!.jshintrc
+
+/**/node_modules
+/**/log
+
+*.log
