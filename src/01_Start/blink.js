@@ -1,6 +1,9 @@
 // Adapted from http://start.tessel.io/blinky
+// LICENSE: MIT
 
-var tessel = require('tessel') // hardware interface
+// Node Modules
+// https://nodejs.org/api/modules.html#modules_modules
+var tessel = require('tessel') // hardware interface, tessel built-in
 var delay  = require('../utils/delay')
 
 // Set the led pins as outputs with initial states

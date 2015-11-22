@@ -1,4 +1,0 @@
-{
-  "name": "tessel_dependencies",
-  "description": "Ensure only tessel dependencies are deployed to hardware"
-}
