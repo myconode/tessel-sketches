@@ -4,18 +4,29 @@ var jshint = require('gulp-jshint')
 var stylish_reporter = require('jshint-stylish')
 
 // File references
-var SRC = "./src"
-var SCRIPTS = SRC + "/**/*.js"
-var IGNORE = "!**/node_modules/**/*"
 var GULPFILE = "./Gulpfile.js"
 
+var SRC_DIR = "./src"
+var SCRIPT_DIR = "./scripts"
 
-// Task registration
-gulp.task('tessel', function(){
-  return gulp.src( [ GULPFILE, SCRIPTS, IGNORE ] )
-    .pipe ( jshint( ) )
+var SRC_SCRIPTS = SRC_DIR + "/**/*.js"
+var PKG_SCRIPTS = SCRIPT_DIR + "/**/*.js"
+var IGNORE = "!**/node_modules/**/*"
+
+var LINT = [ GULPFILE,
+             SRC_SCRIPTS,
+             PKG_SCRIPTS,
+             IGNORE
+           ]
+
+// Lint scripts
+// https://github.com/spalger/gulp-jshint
+gulp.task('lint', function(){
+  return gulp.src( LINT )
+    .pipe ( jshint() )
     .pipe ( jshint.reporter( stylish_reporter ) )
+    .pipe ( jshint.reporter('fail') )
 })
 
 
-gulp.task('default', ['tessel']);
+gulp.task('default', ['lint']);
