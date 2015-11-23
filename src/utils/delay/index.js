@@ -1,8 +1,12 @@
-
+// Halt script execution for given number of microseconds.
+// Inspired by Arduino's built-in delay().
+//
 // Lite version of [ErikDubbelboer's sleep](github.com/ErikDubbelboer/node-sleep)
-// Inspired by Arduino's built-in delay()
+// Copyright (c) 2015 Erik Dubbelboer
+// License: MIT
 
+// @param {number} ms - milliseconds
 module.exports = function delay(ms){
-  var e = new Date().getTime() + (ms)
-  while (new Date().getTime() <= e){ /* jshint noempty:false */ }
+  var then = new Date().getTime() + (ms)
+  while (new Date().getTime() <= then){ /* jshint noempty:false */ }
 }

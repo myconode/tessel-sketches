@@ -1,0 +1,15 @@
+{
+  "name": "01_Basics",
+  "version": "0.1.0",
+  "description": "Intended for absolute Tessel & Javascript newbies",
+  "keywords": [ "tessel", "node" ],
+  "author": "Daniel Christopher <thelostspore@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thelostspore/tessel-sketches/src"
+  },
+  "license": "MIT",
+  "dependencies":{
+    "delay":"file:../utils/delay"
+  }
+}
