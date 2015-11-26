@@ -5,12 +5,10 @@
 //
 // This program loads a local node module containing a helper function using Node's module loading system.
 // For more information see this projects's `package.json` dependencies
-// npm local paths: https://docs.npmjs.com/files/package.json#local-paths
-// Authoring npm modules: https://docs.npmjs.com/getting-started/creating-node-modules
 //
 // To stop this program on the command line, press `CTRL + c`
 
-var delay = require('delay')
+var delay = require('delay-lite')
 var count = 0
 
 while(true){

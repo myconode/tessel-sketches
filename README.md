@@ -20,7 +20,7 @@ The default `gulp` task lints all scripts with [jshint](https://github.com/spalg
 
 To install dependencies for each project in `src`, execute the following command. Alternatively you can run `npm install` in each project's folder.
 ```
-npm run all-deps
+npm run install-project-deps
 ```
 
 Run any of the src scripts on the tessel using the Tessel [v1 CLI](https://github.com/tessel/t1-docs/blob/master/cli.md).

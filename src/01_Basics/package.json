@@ -10,6 +10,6 @@
   },
   "license": "MIT",
   "dependencies":{
-    "delay":"file:../utils/delay"
+    "delay-lite": "^0.1.0"
   }
 }

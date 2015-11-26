@@ -6,7 +6,7 @@
 // Use the Tessel hardware interface library to turn on/off onboard LEDs
 
 var tessel = require('tessel')
-var delay  = require('delay')
+var delay  = require('delay-lite')
 
 // Set the led pins as outputs with initial states
 // Truthy initial state sets the pin high. Falsy sets it low.

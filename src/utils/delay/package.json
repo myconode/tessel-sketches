@@ -1,9 +1,0 @@
-{
-  "name": "delay",
-  "version": "1.0.0",
-  "description": "Halt script execution for given number of microseconds",
-  "main": "index.js",
-  "keywords": [ "tessel delay" ],
-  "author": "thelostspore <thelostspore@gmail.com>",
-  "license": "MIT"
-}
