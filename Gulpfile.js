@@ -1,19 +1,19 @@
 
-var gulp = require('gulp')
-var jshint = require('gulp-jshint')
-var stylish_reporter = require('jshint-stylish')
+const gulp = require('gulp')
+const jshint = require('gulp-jshint')
+const stylish_reporter = require('jshint-stylish')
 
 // File references
-var GULPFILE = "./Gulpfile.js"
+const GULPFILE = "./Gulpfile.js"
 
-var SRC_DIR = "./src"
-var SCRIPT_DIR = "./scripts"
+const SRC_DIR = "./src"
+const SCRIPT_DIR = "./scripts"
 
-var SRC_SCRIPTS = SRC_DIR + "/**/*.js"
-var PKG_SCRIPTS = SCRIPT_DIR + "/**/*.js"
-var IGNORE = "!**/node_modules/**/*"
+const SRC_SCRIPTS = SRC_DIR + "/**/*.js"
+const PKG_SCRIPTS = SCRIPT_DIR + "/**/*.js"
+const IGNORE = "!**/node_modules/**/*"
 
-var LINT = [ GULPFILE,
+const LINT = [ GULPFILE,
              SRC_SCRIPTS,
              PKG_SCRIPTS,
              IGNORE

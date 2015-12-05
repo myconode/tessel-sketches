@@ -4,8 +4,9 @@ General examples for tessel v1 and scaffolding skeleton for tessel projects.
 
 ## Requirements:
 - Install [Tessel CLI](http://start.tessel.io/install)
+  - **Note**: Tessel V1 CLI requires node versions `0.10` or `0.12`. You can manage versions of node using [nvm](https://github.com/creationix/nvm)
 
-- Install [Gulp](http://gulpjs.com/) [globally](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#1-install-gulp-globally)
+- Install [Gulp](http://gulpjs.com/) [globally](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#1-install-gulp-globally).
 
 - Optional: Ensure your tessel's [wifi connection](http://start.tessel.io/wifi) for sketches that use Tessel's built-in [wifi radio](https://github.com/tessel/t1-docs/blob/master/wifi.md#connect-tessel-to-wifi), which is a [TI CC3000](http://www.ti.com/lit/ds/symlink/cc3000.pdf).
 

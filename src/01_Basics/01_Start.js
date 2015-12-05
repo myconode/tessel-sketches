@@ -1,15 +1,14 @@
 // 01_Start.js
-// For demonstration purposes only. Not intended to be deployed to tessel.
+// ** For demonstration purposes only. Not intended to be deployed to tessel.
 //
 // Tessel is a micro-controller programmed in Javascript.
 //
 // Javascript is an interpreted programming language most often associated with the Web.
-// It is one of the three core technologies used to produce webpages (HTML/CSS/JS).
+// It is one of the three core Web technologies (HTML/CSS/JS).
 //
 // Javascript is increasingly used in environments that are not web-based.
 //
 // Tessel's code execution environment is Node.js
-//
 // To learn more about Node.js: https://nodejs.org/api/documentation.html
 
 

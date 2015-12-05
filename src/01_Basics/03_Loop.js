@@ -6,7 +6,7 @@
 // The body of a Tessel script will not loop forever.
 // To simulate a main loop, you can use timers or loops.
 //
-// Loops & Iteration: https://developer.mozilla.org/docs/Web/JavaScript/Guide/Loops_and_iteration
+// [Loops & Iteration](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Loops_and_iteration)
 
 var count = 0
 var limit = 5

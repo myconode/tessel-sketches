@@ -1,31 +1,33 @@
 // Node built-ins
-var fs = require('fs')
-var path = require('path')
-var child = require('child_process')
+const fs = require('fs')
+const path = require('path')
+const child = require('child_process')
 
 // Utilities
-var _ = require("underscore")
+const _ = require("underscore")
 
 // References
-var appDir = process.argv.slice(2)[0] // TODO: better argv parsing
-var srcDir = path.join(appDir, "src")
+const appDir = process.argv.slice(2)[0] // TODO: better argv parsing
+const srcDir = path.join(appDir, "src")
 
-var ignoreDirs = ['node_modules',
+const ignoreDirs = ['node_modules',
                   'utils']
 
-var withoutArgList =  [ filterDirs(srcDir) ]
-                        .concat(ignoreDirs)
+const withoutArgList =  [ filterDirs(srcDir) ]
+                           .concat(ignoreDirs)
 
 // srcDirs less ignoreDirs
-var srcDirs = _.without.apply(this, withoutArgList)
+const srcDirs = _.without.apply(this, withoutArgList)
 
 
 // execute `npm install`
 _.each(srcDirs, function(dir){
-  var dirAbs = path.join(srcDir, dir)
+  const dirAbs = path.join(srcDir, dir)
   process.chdir(dirAbs)
 
-  var stdout = child.execSync('npm install', { encoding: 'utf8' })
+  const stdout = child.execSync('npm install', { encoding: 'utf8' })
+  // Note: if `npm install`s return buffer is greater than 200K,
+  // set a greater buffer size in `execSync` options or use `spawn()`
   process.stdout.write(stdout)
 })
 

@@ -4,11 +4,11 @@
 // similar to how a classic micro-controller would run.
 //
 // This program loads a local node module containing a helper function using Node's module loading system.
-// For more information see this projects's `package.json` dependencies
+// The program is specficied as a dependency for the `01_Basics` project in `./package.json`
 //
 // To stop this program on the command line, press `CTRL + c`
 
-var delay = require('delay-lite')
+var delay = require('delay-ms')
 var count = 0
 
 while(true){
