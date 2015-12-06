@@ -1,0 +1,19 @@
+{
+  "name": "02_Connecting",
+  "version": "1.0.0",
+  "description": "The second project will focus on connecting to the Internet using the built-in Wifi module.",
+  "keywords": [
+    "tessel",
+    "node"
+  ],
+  "author": "Daniel Christopher <thelostspore@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thelostspore/tessel-sketches/src"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "delay-ms": "^0.3.0",
+    "q": "^1.4.1"
+  }
+}

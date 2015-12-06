@@ -11,6 +11,6 @@
   "license": "MIT",
 
   "dependencies":{
-    "delay-ms": "^0.2.0"
+    "delay-ms": "^0.3.0"
   }
 }

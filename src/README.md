@@ -13,11 +13,9 @@ If your builds are too large, be sure the `node_modules` directory contains only
 
 ## Projects - Sketch groups:
 - 01_Start: A few examples for new Tesselators
-
-## Dependencies:
-- [delay-ms](https://github.com/thelostspore/delay-ms)
+- 02_Connecting: Get your Tessel online
 
 ## Instructions
 Upload any of the src scripts on the tessel using the Tessel [v1 CLI](https://github.com/tessel/t1-docs/blob/master/cli.md).
 
-If you are receiving errors, check your code for errors using `gulp`.
+If you are receiving errors, check your code for errors by running `gulp`.
