@@ -1,4 +1,4 @@
-// 03_Request.js
+// 02_Request.js
 //
 // Simple network test
 //

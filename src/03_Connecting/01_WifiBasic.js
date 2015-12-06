@@ -1,6 +1,6 @@
-// 02_WifiBasic.js
+// 01_WifiBasic.js
 // ** For demonstration purposes only
-// Note: Not a fault-tolerant way to connect your Tessel
+// - This is not a fault-tolerant way to connect your Tessel
 //
 // Simple Wifi connection using the `creds`
 // local node module (see this project's README).

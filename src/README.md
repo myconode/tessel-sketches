@@ -1,21 +1,11 @@
-# Sketches
+# Projects
+For **repo-level** requirements and instructions, see primary [README](../README.md).
 
-For **project-level** requirements and instructions, see primary [README](../README.md).
+This directory consists of Tessel projects - collections of scripts that share common dependencies. While only one sketch can be uploaded to the Tessel at a time, each project can be treated as a separate build (code package that will be deployed to the Tessel).
 
-This directory consists of tessel projects (builds). Individual scripts are grouped together based on common dependencies.
-
-- To update dependencies of a given project, `cd` into the project directory and execute `npm install --save <package>` and/or modify `package.json` directly.
-- Running `npm run install-project-deps` will update all dependencies for each project.
-
-This directory has its own `package.json` and dependencies because `tessel` commands `run` or `push` build a package with all local `node_modules` before deploying it to the tessel.
-
-If your builds are too large, be sure the `node_modules` directory contains only the essential libraries for the given script. Only keep scripts that have the same dependencies in the same folder - this strategy keeps builds lighter.
-
-## Projects - Sketch groups:
-- 01_Start: A few examples for new Tesselators
-- 02_Connecting: Get your Tessel online
+1. [Basics](./01_Basics/): A few examples for new Tesselators
+2. [Packages](./02_Packages/): Learn how Tessel builds work, and keep private data safe
+3. [Connecting](./03_Connecting/): Get your Tessel online
 
 ## Instructions
-Upload any of the src scripts on the tessel using the Tessel [v1 CLI](https://github.com/tessel/t1-docs/blob/master/cli.md).
-
-If you are receiving errors, check your code for errors by running `gulp`.
+Refer to each project's README. Each example builds on the previous sketch's material.

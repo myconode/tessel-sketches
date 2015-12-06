@@ -1,16 +1,14 @@
 {
-  "name": "01_Basics",
+  "name": "02_Packages",
   "version": "1.0.0",
-  "description": "Intended for absolute Tessel & Javascript newbies",
-  "keywords": [ "tessel", "node" ],
+  "description": "Learn how Tessel builds work, and keep private data safe",
   "author": "Daniel Christopher <thelostspore@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/thelostspore/tessel-sketches/src"
   },
   "license": "MIT",
-
-  "dependencies":{
-    "delay-ms": "^0.4.0"
+  "dependencies": {
+    "q": "^1.4.1"
   }
 }

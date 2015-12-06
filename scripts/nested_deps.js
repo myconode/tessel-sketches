@@ -10,8 +10,7 @@ const _ = require("underscore")
 const appDir = process.argv.slice(2)[0] // TODO: better argv parsing
 const srcDir = path.join(appDir, "src")
 
-const ignoreDirs = ['node_modules',
-                  'utils']
+const ignoreDirs = [ 'node_modules' ]
 
 const withoutArgList =  [ filterDirs(srcDir) ]
                            .concat(ignoreDirs)

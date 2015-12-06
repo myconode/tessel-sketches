@@ -5,7 +5,10 @@
 //
 // Use the Tessel hardware interface library to turn on/off onboard LEDs
 
+// Tessel Firmware
 var tessel = require('tessel')
+
+// Additonal npm dependency (specified in `package.json`)
 var delay  = require('delay-ms')
 
 // Set the led pins as outputs with initial states
