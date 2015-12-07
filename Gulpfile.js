@@ -20,8 +20,10 @@ const LINT = [ GULPFILE,
 // Lint scripts
 // https://github.com/spalger/gulp-jshint
 gulp.task('lint', function(){
+  var config = { asi: true, esnext: true }
+
   return gulp.src( LINT )
-    .pipe ( jshint() )
+    .pipe ( jshint( config ) )
     .pipe ( jshint.reporter( stylish_reporter ) )
     .pipe ( jshint.reporter('fail') )
 })

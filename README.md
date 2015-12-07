@@ -1,7 +1,7 @@
+[![Build Status](https://travis-ci.org/thelostspore/tessel-sketches.svg?branch=master)](https://travis-ci.org/thelostspore/tessel-sketches)
 [![Dependency Status](https://david-dm.org/thelostspore/tessel-sketches.svg)](https://david-dm.org/thelostspore/tessel-sketches)
 
 # tessel-sketches
-
 General examples for Tessel v1 and scaffolding skeleton for tessel projects.
 
 ## Requirements

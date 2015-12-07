@@ -110,7 +110,7 @@ wifi.on('disconnect', function(data) {
 
 
 // Attempt to reconnect on timeout, and reset wifi chip as necessary
-wifi.on('timeout', function(err) {
+wifi.on('timeout', function() {
   // tried to connect but couldn't, retry
   console.log("Wifi time out, #" + (++timeouts))
 

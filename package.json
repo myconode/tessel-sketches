@@ -13,11 +13,12 @@
   "license": "MIT",
   "dependencies": {
     "gulp": "^3.9.0",
-    "gulp-jshint": "^1.12.0",
+    "gulp-jshint": "1.12.0",
     "jshint-stylish": "^2.1.0",
     "underscore": "^1.8.3"
   },
   "scripts": {
+    "test": "gulp",
     "install-project-deps": "node scripts/nested_deps.js $(pwd)"
   }
 }

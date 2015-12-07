@@ -4,6 +4,7 @@
 # allowed dot files
 !.gitignore
 !.jshintrc
+!.travis.yml
 
 /**/node_modules
 /**/creds

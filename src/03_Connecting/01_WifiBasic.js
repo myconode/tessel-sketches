@@ -64,7 +64,7 @@ wifi.on('disconnect', function(data){
 
 wifi.on('timeout', function(err){
   // tried to connect but couldn't, retry
-  console.log("Timed out")
+  console.log("Timed out:\n", err)
   timeouts++
   if (timeouts > 2) {
     // reset the wifi chip if we've timed out too many times
@@ -80,6 +80,6 @@ wifi.on('error', function(err){
   // 1. tried to disconnect while not connected
   // 2. tried to disconnect while in the middle of trying to connect
   // 3. tried to initialize a connection without first waiting for a timeout or a disconnect
-  console.log("error emitted", err);
+  console.log("error emitted:\n", err);
   // here can make more attempts or report this error
 });
