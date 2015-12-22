@@ -1,11 +1,12 @@
-# 03_Connecting
-The third project will focus on connecting to the Internet using the [built-in Wifi module](https://github.com/tessel/t1-docs/blob/master/wifi.md#connect-tessel-to-wifi).
+# 04_Connecting
+The fourth project will focus on connecting to the Internet using the [built-in Wifi module](https://github.com/tessel/t1-docs/blob/master/wifi.md#connect-tessel-to-wifi).
 
 Before we use the Wifi module, set up a local `creds` module with your Wifi network credentials.
 
 ###Instructions
+Going through the creds workflow once more. There are more efficient ways to manage your secrets, but this is an effective and relatively easy solution for local development with the Tessel.
 - Add `**/creds` to your .gitignore
-- With `03_Connecting` as your current working directory:
+- With `04_Connecting` as your current working directory:
 ```
 mkdir creds
 cd creds
@@ -44,6 +45,8 @@ var creds = require("./creds") // reference to local module
 wifi.connect(creds.wifiConfig)
 ```
 
+See the sketches in this folder for real use cases.
+
 ## Wifi Connection issues
 Below are Tessel's troubleshooting instructions. For further debugging, see Tessel V1 [Wifi documentation](https://github.com/tessel/t1-docs/blob/master/wifi.md#connecting-to-wifi-from-js).
 
@@ -55,3 +58,8 @@ Try power cycling your Tessel and then run the tessel wifi connection command ag
 - Move closer to the router.
 - Reset the router.
 - Make sure the router has b/g mode enabled and isn't using channels 12, 13, or 14.
+
+
+### Dependencies
+- [delay-ms](https://github.com/thelostspore/delay-ms)
+- [q](https://github.com/kriskowal/q)

@@ -1,7 +1,7 @@
 {
-  "name": "02_Packages",
+  "name": "04_Connecting",
   "version": "1.0.0",
-  "description": "Learn how Tessel builds work",
+  "description": "Get your Tessel online",
   "author": "Daniel Christopher <thelostspore@gmail.com>",
   "repository": {
     "type": "git",
@@ -9,6 +9,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "delay-ms": "^0.4.0",
     "q": "^1.4.1"
   }
 }

@@ -1,15 +1,11 @@
 {
-  "name": "03_Connecting",
+  "name": "03_PrivateData",
   "version": "1.0.0",
-  "description": "Get your Tessel online",
+  "description": "Keep private data safe",
   "author": "Daniel Christopher <thelostspore@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/thelostspore/tessel-sketches/src"
   },
-  "license": "MIT",
-  "dependencies": {
-    "delay-ms": "^0.4.0",
-    "q": "^1.4.1"
-  }
+  "license": "MIT"
 }

@@ -21,3 +21,7 @@ var Q = require('q')
 
 // Error thrown before this evaluates
 console.log(Q)
+
+// Why?
+// This is meant to illustrate a realistic (and common) scenario when working with the Tessel. Only, this prepares you
+// for the scary-looking stack-trace (though it does have a useful error) if you do not install your sketches' dependencies
