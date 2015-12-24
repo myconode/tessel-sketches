@@ -1,9 +1,11 @@
-// 02_Request.js
-//
-// Simple network test
-//
-// 1. Attempt to connect to Wifi, retry as necessary
-// 2. Make an HTTP get request & end the program
+/*  02_Request.js
+
+Simple network test
+
+1. Attempt to connect to Wifi, retry as necessary
+2. Make an HTTP get request & end the program
+
+*/
 
 
 // Tessel firmware

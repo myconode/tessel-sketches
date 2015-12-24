@@ -1,12 +1,13 @@
-// 01_WifiBasic.js
-// ** For demonstration purposes only
-// - This is not a fault-tolerant way to connect your Tessel
-//
-// Simple Wifi connection using the `creds`
-// local node module (see this project's README).
-//
-// Combines Tessel [wifi examples](http://start.tessel.io/wifi)
-// LICENSE: MIT
+/* 01_WifiBasic.js
+** For demonstration purposes only
+- This is not a fault-tolerant way to connect your Tessel
+
+Simple Wifi connection using the `creds`
+local node module (see this project's README).
+
+Combines Tessel [wifi examples](http://start.tessel.io/wifi)
+LICENSE: MIT
+*/
 
 // Tessel firmware
 var wifi = require('wifi-cc3000')

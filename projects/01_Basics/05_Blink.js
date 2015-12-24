@@ -1,14 +1,13 @@
-// 05_Blink.js
-// Adapted from http://start.tessel.io/blinky
-// Copyright (c) 2015 Technical Machine
-// License: MIT
-//
-// Use the Tessel hardware interface library to turn on/off onboard LEDs
+/* 05_Blink.js
 
-// Tessel Firmware
+Adapted from http://start.tessel.io/blinky
+Copyright (c) 2015 Technical Machine
+License: MIT
+
+Use the Tessel hardware interface library to turn on/off onboard LEDs
+*/
+
 var tessel = require('tessel')
-
-// Additonal npm dependency (specified in `package.json`)
 var delay  = require('delay-ms')
 
 // Set the led pins as outputs with initial states

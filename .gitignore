@@ -1,4 +1,3 @@
-# By default, ignore all dot files
 .*
 
 # allowed dot files
@@ -10,4 +9,3 @@
 /**/creds
 /**/log
 
-*.log
