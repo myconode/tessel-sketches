@@ -2,9 +2,7 @@
 A low-tech way to keep your data private when working with the Tessel.
 
 ## Instructions
-Hopefully you're getting the hang of this, if not check out sections [one](../01_Basics) or [two](../02_Packages). Simply `npm install` here, or install all of this repo's dependencies via `npm run install-project-deps`.
-
-**Note**: I'll say it one more time, `npm install` **never removes libraries** from `node_modules`. Keep this in mind when you're developing a project and frequently deploying to the Tessel.
+Simply `npm install` here, or install all of this repo's dependencies via `npm run install-project-deps`.
 
 ## Private Data
 There are scenarios where you will want to provide access credentials to objects in Tessel programs. It is worth knowing a way to keep this data private when using a public version control system like git.
