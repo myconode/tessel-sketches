@@ -1,12 +1,12 @@
 {
-  "name": "02_Packages",
+  "name": "03_Modules",
   "version": "1.0.0",
   "description": "Learn how Tessel builds work",
-  "author": "Daniel Christopher <thelostspore@gmail.com>",
+  "author": "thelostspore <thelostspore@gmail.com>",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/thelostspore/tessel-sketches/projects/02_Packages"
+    "url": "https://github.com/thelostspore/tessel-sketches/projects/03_Modules"
   },
   "license": "MIT",
   "dependencies": {

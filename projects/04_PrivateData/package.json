@@ -1,0 +1,11 @@
+{
+  "name": "04_PrivateData",
+  "version": "1.0.0",
+  "description": "Keep private data safe",
+  "author": "thelostspore <thelostspore@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thelostspore/tessel-sketches/projects/04_PrivateData"
+  },
+  "license": "MIT"
+}

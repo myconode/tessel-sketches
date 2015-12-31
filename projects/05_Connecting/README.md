@@ -1,9 +1,9 @@
-# 04_Connecting
+# 05_Connecting
 The fourth project will focus on connecting to the Internet using the [built-in Wifi module](https://github.com/tessel/t1-docs/blob/master/wifi.md#connect-tessel-to-wifi).
 
 Before we use the Wifi module, set up a local `creds` module with your Wifi network credentials.
 
-###Instructions
+## Instructions
 Going through the creds workflow once more. There are more efficient ways to manage your secrets, but this is an effective and relatively easy solution for local development with the Tessel & public source code management like Github.
 
 - Add `**/creds` to your .gitignore

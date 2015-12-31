@@ -5,8 +5,10 @@ This directory consists of Tessel projects - collections of scripts that share c
 
 1. [Basics](./01_Basics/): A few examples for new Tesselators
 2. [Packages](./02_Packages/): Learn how Tessel builds work
-3. [PrivateData](./03_PrivateData/): Keep your private data safe
-3. [Connecting](./04_Connecting/): Get your Tessel online
+3. [Modules](./03_Modules/):
+4. [PrivateData](./04_PrivateData/): Keep your private data safe
+5. [Connecting](./05_Connecting/): Get your Tessel online
+6. [WebServices](./06_WebServices):
 
 ## Instructions
 Refer to each project's README. Each example builds on the previous sketch's material.

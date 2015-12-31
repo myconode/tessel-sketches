@@ -1,0 +1,15 @@
+{
+  "name": "06_WebServices",
+  "version": "1.0.0",
+  "description": "Demos of some popular web services",
+  "author": "thelostspore <thelostspore@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thelostspore/tessel-sketches/projects/06_WebServices"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "delay-ms": "^0.4.0",
+    "q": "^1.4.1"
+  }
+}

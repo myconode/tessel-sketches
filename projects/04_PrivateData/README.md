@@ -1,4 +1,4 @@
-# 03_PrivateData
+# 04_PrivateData
 A low-tech way to keep your data private when working with the Tessel.
 
 ## Instructions

@@ -1,11 +1,11 @@
 {
-  "name": "04_Connecting",
+  "name": "05_Connecting",
   "version": "1.0.0",
   "description": "Get your Tessel online",
-  "author": "Daniel Christopher <thelostspore@gmail.com>",
+  "author": "thelostspore <thelostspore@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thelostspore/tessel-sketches/src"
+    "url": "https://github.com/thelostspore/tessel-sketches/projects/05_Connecting"
   },
   "license": "MIT",
   "dependencies": {

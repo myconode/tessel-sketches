@@ -85,6 +85,10 @@ gulp.task('prune', function(done){
 })
 
 
+// Add task for checking syntax of all package.json syntax
+
+
+
 
 // checks if commands are available
 // @param {Array} commands - list of commands
