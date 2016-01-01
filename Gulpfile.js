@@ -1,12 +1,9 @@
 'use strict'
 
-var spawn = require('child_process').spawn
+var exec = require('child_process').execSync
 
 var gulp = require('gulp')
 var jshint = require('gulp-jshint')
-var stylish_reporter = require('jshint-stylish')
-
-var Q = require('q')
 
 var argv = require('minimist')( process.argv.slice(2) )
 
@@ -23,11 +20,8 @@ var LINT_SRC = [ GULPFILE,
                  IGNORE ]
 
 
-/*  external dependencies */
 // `tessel` cli must be installed on your system
-//  cli instructions in README.md
-//shell_has( ['tessel', 'npm'] ).then(undefined, cmd_not_found)
-shell_has( ['tessel', 'npm'] )
+shell_has(['tessel'])
 
 
 // default
@@ -38,89 +32,31 @@ gulp.task('lint', function(){
 
   return gulp.src( LINT_SRC )
     .pipe ( jshint( config ) )
-    .pipe ( jshint.reporter( stylish_reporter ) )
+    .pipe ( jshint.reporter('default') )
     .pipe ( jshint.reporter('fail') )
-})
-
-// run or push tessel prorams with these tasks
-gulp.task('tessel', ['lint', 'prune'], function(){
-  var command
-  var output = ""
-
-  if( argv.c ){ command = argv.c }
-  // if( argv)
-    console.log(argv)
-
-  spawn('tessel', [ command ])
-    .stderr.on('data', function(data){ output += data })
-    .on('close', function() { console.log(output) })
-  // }, function(err){
-  //     console.log(err)
-  //     process.exit(1)
-  // })
-
-})
-
-// runs `npm prune` in cwd
-// ensures dependencies only specified in package.json
-//
-gulp.task('prune', function(done){
-
-
-  spawn('npm', ['install --production'])
-    .on('close', function(code){
-
-    })
-
-  spawn('npm', ['prune'])
-    .on('close', function(code){
-      if(code === 0 ){
-        done()
-      }
-      else {
-        console.log('`npm prune` failed')
-        process.exit(1)
-      }
-    })
 })
 
 
 // Add task for checking syntax of all package.json syntax
-
-
+// Add task for pruning dependencies
 
 
 // checks if commands are available
 // @param {Array} commands - list of commands
-// @returns {Promise}
 function shell_has(commands){
-  var c = 0
-  var promises = 0
+  var failures = []
 
-  for(; c < commands.length; c++){
-    var _has = Q.defer()
-
-    console.log(' promise created ' )
-    spawn('which', [ c ] )
-      .on('close', check_code)
-
-  }
-
-  function check_code(code) {
-    if(code !== 0) {
-      _has.reject(c + ' not found')
-    } else {
-      _has.resolve()
+  for( var c=0; c < commands.length; c++ ){
+    var cmd = commands[c]
+    try{
+      exec('which ' + cmd, { encoding: 'utf8'} )
+    }catch(e){
+      failures.push(cmd)
     }
   }
 
-  console.log(promises)
-
-  //return _has.promise
-}
-
-
-function cmd_not_found(err){
-  console.log(err)
-  process.exit(1)
+  if( failures.length > 0 ){
+    console.log("\nThe following commands are unavailable in your shell: \n", failures, "\n")
+    process.exit(1)
+  }
 }

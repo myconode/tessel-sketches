@@ -1,12 +1,10 @@
-// Node built-ins
 const fs = require('fs')
 const path = require('path')
-const child = require('child_process')
+const child = require('child_process').execSync
 
-// Utilities
 const _ = require("underscore")
 
-// References
+// Directories
 const appDir = process.argv.slice(2)[0] // TODO: better argv parsing
 const srcDir = path.join(appDir, "src")
 
@@ -24,7 +22,7 @@ _.each(srcDirs, function(dir){
   const dirAbs = path.join(srcDir, dir)
   process.chdir(dirAbs)
 
-  const stdout = child.execSync('npm install', { encoding: 'utf8' })
+  const stdout = exec('npm install', { encoding: 'utf8' })
   // Note: if `npm install`s return buffer is greater than 200K,
   // set a greater buffer size in `execSync` options or use `spawn()`
   process.stdout.write(stdout)

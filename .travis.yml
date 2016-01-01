@@ -1,5 +1,6 @@
 before_script:
   - npm install -g gulp
+  - npm install -g tessel
 
 script: gulp
 
